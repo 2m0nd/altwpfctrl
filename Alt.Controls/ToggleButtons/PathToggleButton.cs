@@ -48,7 +48,7 @@ namespace Alt.Controls.ToggleButtons
         }
 
         public static readonly DependencyProperty UncheckedColorProperty =
-            DependencyProperty.Register("UncheckedColor", typeof(Color), typeof(PathToggleButton), new PropertyMetadata(Color.FromRgb(255, 155, 155, 155), UncheckedColorChanged));
+            DependencyProperty.Register("UncheckedColor", typeof(Color), typeof(PathToggleButton), new PropertyMetadata(Color.FromArgb(255, 155, 155, 155), UncheckedColorChanged));
 
         private static void UncheckedColorChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
         {
