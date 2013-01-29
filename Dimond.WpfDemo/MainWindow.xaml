@@ -4,12 +4,6 @@
         xmlns:toggleButtons="clr-namespace:Alt.Controls.ToggleButtons;assembly=Alt.Controls"
         Title="MainWindow" SizeToContent="WidthAndHeight">
     
-    <Window.Resources>
-
-       
-
-    </Window.Resources>
-
     <StackPanel Orientation="Horizontal" Background="White" Margin="50">
         
         <toggleButtons:PathToggleButton
@@ -49,7 +43,7 @@
             Height="100" 
             IsChecked="True"
             PathGeometry="{StaticResource configs}"
-            CheckedColor="Silver"
+            CheckedColor="#CF8A53"
             />
 
     </StackPanel>
