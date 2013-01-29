@@ -55,15 +55,24 @@
                                     <Path.Fill>
                                         <SolidColorBrush Color="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=CurrentFillColor}"/>
                                     </Path.Fill>
-                                    <Path.Effect>
-                                        <DropShadowEffect Opacity="0.5"></DropShadowEffect>
-                                    </Path.Effect>
+                                    <!--<Path.Effect>
+                                        <DropShadowEffect Opacity="0.5"/>
+                                    </Path.Effect>-->
                                 </Path>
                                 <Grid x:Name="overGrid" Background="#23FFFFFF" Visibility="Collapsed"/>
                             </Grid>
                         </Grid>
 
                     </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="_path" Property="Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect Opacity="0.5"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
