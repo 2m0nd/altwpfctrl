@@ -1,0 +1,72 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:altToggleButtons="clr-namespace:Alt.Controls.ToggleButtons">
+    
+    <Style TargetType="altToggleButtons:PathToggleButton">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="BorderBrush">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFA3AEB9" Offset="0"/>
+                    <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                    <GradientStop Color="#FF718597" Offset="0.375"/>
+                    <GradientStop Color="#FF617584" Offset="1"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="altToggleButtons:PathToggleButton">
+                    <Grid>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="MouseOver">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="overGrid" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible</Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <ThicknessAnimation Duration="0:0:0.0" Storyboard.TargetName="_pathContainer" Storyboard.TargetProperty="Margin" To="3 3 0 0" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled"/>
+                            </VisualStateGroup>
+
+                        </VisualStateManager.VisualStateGroups>
+
+                        <Grid Background="Transparent">
+                            <Grid
+                                    x:Name="_pathContainer"
+                                    >
+                                <Path
+                                    Margin="3"
+                                    x:Name="_path"
+                                    Stretch="Uniform"
+                                    Data="{TemplateBinding PathGeometry}"
+                                    >
+                                    <Path.Fill>
+                                        <SolidColorBrush Color="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=CurrentFillColor}"/>
+                                    </Path.Fill>
+                                    <Path.Effect>
+                                        <DropShadowEffect Opacity="0.5"></DropShadowEffect>
+                                    </Path.Effect>
+                                </Path>
+                                <Grid x:Name="overGrid" Background="#23FFFFFF" Visibility="Collapsed"/>
+                            </Grid>
+                        </Grid>
+
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+</ResourceDictionary>
