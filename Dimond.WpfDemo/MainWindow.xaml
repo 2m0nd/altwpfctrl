@@ -13,43 +13,43 @@
     <StackPanel Orientation="Vertical" Margin="50">
         <StackPanel Orientation="Horizontal" Background="White">
 
-            <toggleButtons:PathToggleButton
+            <toggleButtons:GeometryToggleButton
             Width="100" 
             Height="100" 
             IsChecked="True"
-            PathGeometry="{StaticResource ammbrella}"
+            Geometry="{StaticResource ammbrella}"
             CheckedColor="#F63B77"
             />
 
-            <toggleButtons:PathToggleButton 
+            <toggleButtons:GeometryToggleButton 
             Width="100" 
             Height="100" 
             IsChecked="True"
-            PathGeometry="{StaticResource github}"
+            Geometry="{StaticResource github}"
             CheckedColor="Black"
             />
 
-            <toggleButtons:PathToggleButton 
+            <toggleButtons:GeometryToggleButton 
             Width="100" 
             Height="100" 
             IsChecked="True"
-            PathGeometry="{StaticResource linux}"
+            Geometry="{StaticResource linux}"
             CheckedColor="#0014C5"
             />
 
-            <toggleButtons:PathToggleButton 
+            <toggleButtons:GeometryToggleButton 
             Width="100" 
             Height="100" 
             IsChecked="True"
-            PathGeometry="{StaticResource temperature}"
+            Geometry="{StaticResource temperature}"
             CheckedColor="#FE0000"
             />
 
-            <toggleButtons:PathToggleButton 
+            <toggleButtons:GeometryToggleButton 
             Width="100" 
             Height="100" 
             IsChecked="True"
-            PathGeometry="{StaticResource configs}"
+            Geometry="{StaticResource speaker}"
             CheckedColor="#DE6B38"
             />
 
@@ -59,43 +59,43 @@
 
         <StackPanel Orientation="Horizontal" Background="White" VerticalAlignment="Center" >
 
-            <toggleButtons:PathToggleButton
+            <toggleButtons:GeometryToggleButton
             Width="75" 
             Height="75" 
             IsChecked="True"
-            PathGeometry="{StaticResource ammbrella}"
+            Geometry="{StaticResource ammbrella}"
             CheckedColor="#F63B77"
             />
 
-            <toggleButtons:PathToggleButton 
+            <toggleButtons:GeometryToggleButton 
             Width="75" 
             Height="75" 
             IsChecked="True"
-            PathGeometry="{StaticResource github}"
+            Geometry="{StaticResource github}"
             CheckedColor="Black"
             />
 
-            <toggleButtons:PathToggleButton 
+            <toggleButtons:GeometryToggleButton 
             Width="75" 
             Height="75" 
             IsChecked="True"
-            PathGeometry="{StaticResource linux}"
+            Geometry="{StaticResource linux}"
             CheckedColor="#0014C5"
             />
 
-            <toggleButtons:PathToggleButton 
+            <toggleButtons:GeometryToggleButton 
              Width="75" 
             Height="75" 
             IsChecked="True"
-            PathGeometry="{StaticResource temperature}"
+            Geometry="{StaticResource temperature}"
             CheckedColor="#FE0000"
             />
 
-            <toggleButtons:PathToggleButton 
+            <toggleButtons:GeometryToggleButton 
              Width="75" 
             Height="75" 
             IsChecked="True"
-            PathGeometry="{StaticResource configs}"
+            Geometry="{StaticResource configs}"
             CheckedColor="#DE6B38"
             />
 
@@ -105,43 +105,43 @@
 
         <StackPanel Orientation="Horizontal" Background="White" VerticalAlignment="Center" >
 
-            <toggleButtons:PathToggleButton
+            <toggleButtons:GeometryToggleButton
             Width="50" 
             Height="50" 
             IsChecked="True"
-            PathGeometry="{StaticResource ammbrella}"
+            Geometry="{StaticResource ammbrella}"
             CheckedColor="#F63B77"
             />
 
-            <toggleButtons:PathToggleButton 
+            <toggleButtons:GeometryToggleButton 
             Width="50" 
             Height="50" 
             IsChecked="True"
-            PathGeometry="{StaticResource github}"
+            Geometry="{StaticResource github}"
             CheckedColor="Black"
             />
 
-            <toggleButtons:PathToggleButton 
+            <toggleButtons:GeometryToggleButton 
             Width="50" 
             Height="50" 
             IsChecked="True"
-            PathGeometry="{StaticResource linux}"
+            Geometry="{StaticResource linux}"
             CheckedColor="#0014C5"
             />
 
-            <toggleButtons:PathToggleButton 
+            <toggleButtons:GeometryToggleButton 
             Width="50" 
             Height="50"  
             IsChecked="True"
-            PathGeometry="{StaticResource temperature}"
+            Geometry="{StaticResource temperature}"
             CheckedColor="#FE0000"
             />
 
-            <toggleButtons:PathToggleButton 
+            <toggleButtons:GeometryToggleButton 
             Width="50" 
             Height="50" 
             IsChecked="True"
-            PathGeometry="{StaticResource configs}"
+            Geometry="{StaticResource configs}"
             CheckedColor="#DE6B38"
             />
 
@@ -151,43 +151,43 @@
 
         <StackPanel Orientation="Horizontal" Background="White" VerticalAlignment="Center" >
 
-            <toggleButtons:PathToggleButton
+            <toggleButtons:GeometryToggleButton
             Width="30" 
             Height="30" 
             IsChecked="True"
-            PathGeometry="{StaticResource ammbrella}"
+            Geometry="{StaticResource ammbrella}"
             CheckedColor="#F63B77"
             />
 
-            <toggleButtons:PathToggleButton 
+            <toggleButtons:GeometryToggleButton 
             Width="30" 
             Height="30" 
             IsChecked="True"
-            PathGeometry="{StaticResource github}"
+            Geometry="{StaticResource github}"
             CheckedColor="Black"
             />
 
-            <toggleButtons:PathToggleButton 
+            <toggleButtons:GeometryToggleButton 
             Width="30" 
             Height="30"  
             IsChecked="True"
-            PathGeometry="{StaticResource linux}"
+            Geometry="{StaticResource linux}"
             CheckedColor="#0014C5"
             />
 
-            <toggleButtons:PathToggleButton 
+            <toggleButtons:GeometryToggleButton 
             Width="30" 
             Height="30" 
             IsChecked="True"
-            PathGeometry="{StaticResource temperature}"
+            Geometry="{StaticResource temperature}"
             CheckedColor="#FE0000"
             />
 
-            <toggleButtons:PathToggleButton 
+            <toggleButtons:GeometryToggleButton 
             Width="30" 
             Height="30" 
             IsChecked="True"
-            PathGeometry="{StaticResource configs}"
+            Geometry="{StaticResource speaker}"
             CheckedColor="#DE6B38"
             />
 

@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:altToggleButtons="clr-namespace:Alt.Controls.ToggleButtons">
     
-    <Style TargetType="altToggleButtons:PathToggleButton">
+    <Style TargetType="altToggleButtons:GeometryToggleButton">
         <Setter Property="Cursor" Value="Hand"/>
         <Setter Property="BorderBrush">
             <Setter.Value>
@@ -16,7 +16,7 @@
         </Setter>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="altToggleButtons:PathToggleButton">
+                <ControlTemplate TargetType="altToggleButtons:GeometryToggleButton">
                     <Grid>
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
@@ -50,7 +50,7 @@
                                     Margin="3"
                                     x:Name="_path"
                                     Stretch="Uniform"
-                                    Data="{TemplateBinding PathGeometry}"
+                                    Data="{TemplateBinding Geometry}"
                                     >
                                     <Path.Fill>
                                         <SolidColorBrush Color="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=CurrentFillColor}"/>

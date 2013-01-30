@@ -2,5 +2,6 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Icons/Raphaeljs.xaml"/>
+		<ResourceDictionary Source="Icons/OpenClipart.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

@@ -47,7 +47,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ToggleButtons\PathToggleButton.cs" />
+    <Compile Include="ToggleButtons\GeometryToggleButton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -75,6 +75,10 @@
     <Page Include="Common.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Icons\OpenClipart.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Icons\Raphaeljs.xaml">
       <SubType>Designer</SubType>

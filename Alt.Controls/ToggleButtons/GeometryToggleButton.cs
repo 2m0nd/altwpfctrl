@@ -4,9 +4,9 @@ using System.Windows.Media;
 
 namespace Alt.Controls.ToggleButtons
 {
-    public class PathToggleButton : ToggleButton
+    public class GeometryToggleButton : ToggleButton
     {
-        public PathToggleButton()
+        public GeometryToggleButton()
         {
             this.Checked += OnChecked;
             this.Unchecked += OnUnchecked;
@@ -29,11 +29,11 @@ namespace Alt.Controls.ToggleButtons
 
 
         public static readonly DependencyProperty CheckedColorProperty =
-            DependencyProperty.Register("CheckedColor", typeof(Color), typeof(PathToggleButton), new PropertyMetadata(Colors.Green, CheckedColorChanged));
+            DependencyProperty.Register("CheckedColor", typeof(Color), typeof(GeometryToggleButton), new PropertyMetadata(Colors.Green, CheckedColorChanged));
 
         private static void CheckedColorChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
         {
-            var instance = (PathToggleButton)dependencyObject;
+            var instance = (GeometryToggleButton)dependencyObject;
             var newValue = (Color)dependencyPropertyChangedEventArgs.NewValue;
             if (instance.IsChecked.Value)
             {
@@ -48,11 +48,11 @@ namespace Alt.Controls.ToggleButtons
         }
 
         public static readonly DependencyProperty UncheckedColorProperty =
-            DependencyProperty.Register("UncheckedColor", typeof(Color), typeof(PathToggleButton), new PropertyMetadata(Color.FromArgb(255, 155, 155, 155), UncheckedColorChanged));
+            DependencyProperty.Register("UncheckedColor", typeof(Color), typeof(GeometryToggleButton), new PropertyMetadata(Color.FromArgb(255, 155, 155, 155), UncheckedColorChanged));
 
         private static void UncheckedColorChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
         {
-            var instance = (PathToggleButton)dependencyObject;
+            var instance = (GeometryToggleButton)dependencyObject;
             var newValue = (Color) dependencyPropertyChangedEventArgs.NewValue;
             if (!instance.IsChecked.Value)
             {
@@ -67,7 +67,7 @@ namespace Alt.Controls.ToggleButtons
         }
 
         public static readonly DependencyProperty CurrentFillColorProperty =
-            DependencyProperty.Register("CurrentFillColor", typeof (Color), typeof (PathToggleButton), new PropertyMetadata(default(Color)));
+            DependencyProperty.Register("CurrentFillColor", typeof (Color), typeof (GeometryToggleButton), new PropertyMetadata(default(Color)));
 
         public Color CurrentFillColor
         {
@@ -75,13 +75,13 @@ namespace Alt.Controls.ToggleButtons
             set { SetValue(CurrentFillColorProperty, value); }
         }
 
-        public static readonly DependencyProperty PathGeometryProperty =
-            DependencyProperty.Register("PathGeometry", typeof(PathGeometry), typeof(PathToggleButton), new PropertyMetadata(default(PathGeometry)));
+        public static readonly DependencyProperty GeometryProperty =
+            DependencyProperty.Register("Geometry", typeof(Geometry), typeof(GeometryToggleButton), new PropertyMetadata(default(PathGeometry)));
 
-        public PathGeometry PathGeometry
+		public Geometry Geometry
         {
-            get { return (PathGeometry)GetValue(PathGeometryProperty); }
-            set { SetValue(PathGeometryProperty, value); }
+			get { return (Geometry)GetValue(GeometryProperty); }
+			set { SetValue(GeometryProperty, value); }
         }
 
         
