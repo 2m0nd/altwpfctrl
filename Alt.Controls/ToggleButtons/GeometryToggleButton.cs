@@ -110,6 +110,15 @@ namespace Alt.Controls.ToggleButtons
 		    get { return (Geometry) GetValue(UnchekedGeometryProperty); }
 		    set { SetValue(UnchekedGeometryProperty, value); }
 	    }
+
+	    public static readonly DependencyProperty HorizontalPathAligmentProperty =
+		    DependencyProperty.Register("HorizontalPathAligment", typeof (HorizontalAlignment), typeof (GeometryToggleButton), new PropertyMetadata(default(HorizontalAlignment)));
+
+	    public HorizontalAlignment HorizontalPathAligment
+	    {
+		    get { return (HorizontalAlignment) GetValue(HorizontalPathAligmentProperty); }
+		    set { SetValue(HorizontalPathAligmentProperty, value); }
+	    }
         
     }
 }

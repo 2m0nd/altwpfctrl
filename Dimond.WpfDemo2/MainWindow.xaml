@@ -42,6 +42,7 @@
             IsChecked="True"
             CheckedGeometry="{StaticResource soundMax}"
 			UnchekedGeometry="{StaticResource soundMin}"
+			HorizontalPathAligment="Left"
             CheckedColor="LightBlue"
             />
 

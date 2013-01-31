@@ -88,6 +88,7 @@
                                     Margin="3"
                                     x:Name="_pathChecked"
                                     Stretch="Uniform"
+									HorizontalAlignment="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=HorizontalPathAligment}"
                                     Data="{TemplateBinding CheckedGeometry}"
                                     >
                                     <Path.Fill>
@@ -98,6 +99,7 @@
 									Margin="3"
                                     x:Name="_pathUnchecked"
                                     Stretch="Uniform"
+									HorizontalAlignment="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=HorizontalPathAligment}"
                                     Data="{TemplateBinding UnchekedGeometry}"
                                     >
 									<Path.Fill>
