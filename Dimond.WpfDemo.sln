@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dimond.WpfDemo", "Dimond.Wp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alt.Controls", "Alt.Controls\Alt.Controls.csproj", "{10697508-92C4-4E17-8BC2-187A57D93E51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dimond.WpfDemo2", "Dimond.WpfDemo2\Dimond.WpfDemo2.csproj", "{495373A7-B70E-4C8A-9146-76359D288D7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{10697508-92C4-4E17-8BC2-187A57D93E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10697508-92C4-4E17-8BC2-187A57D93E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10697508-92C4-4E17-8BC2-187A57D93E51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{495373A7-B70E-4C8A-9146-76359D288D7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{495373A7-B70E-4C8A-9146-76359D288D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{495373A7-B70E-4C8A-9146-76359D288D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{495373A7-B70E-4C8A-9146-76359D288D7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
