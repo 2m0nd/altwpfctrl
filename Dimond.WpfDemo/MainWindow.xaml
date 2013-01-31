@@ -17,7 +17,7 @@
             Width="100" 
             Height="100" 
             IsChecked="True"
-            Geometry="{StaticResource ammbrella}"
+            CheckedGeometry="{StaticResource ammbrella}"
             CheckedColor="#F63B77"
             />
 
@@ -25,7 +25,7 @@
             Width="100" 
             Height="100" 
             IsChecked="True"
-            Geometry="{StaticResource github}"
+            CheckedGeometry="{StaticResource github}"
             CheckedColor="Black"
             />
 
@@ -33,7 +33,7 @@
             Width="100" 
             Height="100" 
             IsChecked="True"
-            Geometry="{StaticResource linux}"
+            CheckedGeometry="{StaticResource linux}"
             CheckedColor="#0014C5"
             />
 
@@ -41,7 +41,7 @@
             Width="100" 
             Height="100" 
             IsChecked="True"
-            Geometry="{StaticResource temperature}"
+            CheckedGeometry="{StaticResource temperature}"
             CheckedColor="#FE0000"
             />
 
@@ -49,7 +49,7 @@
             Width="100" 
             Height="100" 
             IsChecked="True"
-            Geometry="{StaticResource speaker}"
+            CheckedGeometry="{StaticResource speaker}"
             CheckedColor="#DE6B38"
             />
 
@@ -63,7 +63,7 @@
             Width="75" 
             Height="75" 
             IsChecked="True"
-            Geometry="{StaticResource ammbrella}"
+            CheckedGeometry="{StaticResource ammbrella}"
             CheckedColor="#F63B77"
             />
 
@@ -71,7 +71,7 @@
             Width="75" 
             Height="75" 
             IsChecked="True"
-            Geometry="{StaticResource github}"
+            CheckedGeometry="{StaticResource github}"
             CheckedColor="Black"
             />
 
@@ -79,7 +79,7 @@
             Width="75" 
             Height="75" 
             IsChecked="True"
-            Geometry="{StaticResource linux}"
+            CheckedGeometry="{StaticResource linux}"
             CheckedColor="#0014C5"
             />
 
@@ -87,7 +87,7 @@
              Width="75" 
             Height="75" 
             IsChecked="True"
-            Geometry="{StaticResource temperature}"
+            CheckedGeometry="{StaticResource temperature}"
             CheckedColor="#FE0000"
             />
 
@@ -95,7 +95,7 @@
              Width="75" 
             Height="75" 
             IsChecked="True"
-            Geometry="{StaticResource configs}"
+            CheckedGeometry="{StaticResource configs}"
             CheckedColor="#DE6B38"
             />
 
@@ -109,7 +109,7 @@
             Width="50" 
             Height="50" 
             IsChecked="True"
-            Geometry="{StaticResource ammbrella}"
+            CheckedGeometry="{StaticResource ammbrella}"
             CheckedColor="#F63B77"
             />
 
@@ -117,7 +117,7 @@
             Width="50" 
             Height="50" 
             IsChecked="True"
-            Geometry="{StaticResource github}"
+            CheckedGeometry="{StaticResource github}"
             CheckedColor="Black"
             />
 
@@ -125,7 +125,7 @@
             Width="50" 
             Height="50" 
             IsChecked="True"
-            Geometry="{StaticResource linux}"
+            CheckedGeometry="{StaticResource linux}"
             CheckedColor="#0014C5"
             />
 
@@ -133,7 +133,7 @@
             Width="50" 
             Height="50"  
             IsChecked="True"
-            Geometry="{StaticResource temperature}"
+            CheckedGeometry="{StaticResource temperature}"
             CheckedColor="#FE0000"
             />
 
@@ -141,7 +141,7 @@
             Width="50" 
             Height="50" 
             IsChecked="True"
-            Geometry="{StaticResource configs}"
+            CheckedGeometry="{StaticResource configs}"
             CheckedColor="#DE6B38"
             />
 
@@ -155,7 +155,7 @@
             Width="30" 
             Height="30" 
             IsChecked="True"
-            Geometry="{StaticResource ammbrella}"
+            CheckedGeometry="{StaticResource ammbrella}"
             CheckedColor="#F63B77"
             />
 
@@ -163,7 +163,7 @@
             Width="30" 
             Height="30" 
             IsChecked="True"
-            Geometry="{StaticResource github}"
+            CheckedGeometry="{StaticResource github}"
             CheckedColor="Black"
             />
 
@@ -171,7 +171,7 @@
             Width="30" 
             Height="30"  
             IsChecked="True"
-            Geometry="{StaticResource linux}"
+            CheckedGeometry="{StaticResource linux}"
             CheckedColor="#0014C5"
             />
 
@@ -179,7 +179,7 @@
             Width="30" 
             Height="30" 
             IsChecked="True"
-            Geometry="{StaticResource temperature}"
+            CheckedGeometry="{StaticResource temperature}"
             CheckedColor="#FE0000"
             />
 
@@ -187,7 +187,7 @@
             Width="30" 
             Height="30" 
             IsChecked="True"
-            Geometry="{StaticResource speaker}"
+            CheckedGeometry="{StaticResource speaker}"
             CheckedColor="#DE6B38"
             />
 

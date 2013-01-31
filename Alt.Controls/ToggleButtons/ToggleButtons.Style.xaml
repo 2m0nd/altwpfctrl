@@ -39,8 +39,46 @@
                                 </VisualState>
                                 <VisualState x:Name="Disabled"/>
                             </VisualStateGroup>
-
-                        </VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CheckStates">
+								<VisualState x:Name="Checked">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="_pathChecked" Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0">
+												<DiscreteObjectKeyFrame.Value>
+													<Visibility>Visible</Visibility>
+												</DiscreteObjectKeyFrame.Value>
+											</DiscreteObjectKeyFrame>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="_pathUnchecked" Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0">
+												<DiscreteObjectKeyFrame.Value>
+													<Visibility>Collapsed</Visibility>
+												</DiscreteObjectKeyFrame.Value>
+											</DiscreteObjectKeyFrame>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Unchecked">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="_pathChecked" Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0">
+												<DiscreteObjectKeyFrame.Value>
+													<Visibility>Collapsed</Visibility>
+												</DiscreteObjectKeyFrame.Value>
+											</DiscreteObjectKeyFrame>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="_pathUnchecked" Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0">
+												<DiscreteObjectKeyFrame.Value>
+													<Visibility>Visible</Visibility>
+												</DiscreteObjectKeyFrame.Value>
+											</DiscreteObjectKeyFrame>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Indeterminate" />
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
 
                         <Grid Background="Transparent">
                             <Grid
@@ -48,30 +86,42 @@
                                     >
                                 <Path
                                     Margin="3"
-                                    x:Name="_path"
+                                    x:Name="_pathChecked"
                                     Stretch="Uniform"
-                                    Data="{TemplateBinding Geometry}"
+                                    Data="{TemplateBinding CheckedGeometry}"
                                     >
                                     <Path.Fill>
                                         <SolidColorBrush Color="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=CurrentFillColor}"/>
                                     </Path.Fill>
-                                    <!--<Path.Effect>
-                                        <DropShadowEffect Opacity="0.5"/>
-                                    </Path.Effect>-->
                                 </Path>
-                                <Grid x:Name="overGrid" Background="#23FFFFFF" Visibility="Collapsed"/>
+								<Path
+									Margin="3"
+                                    x:Name="_pathUnchecked"
+                                    Stretch="Uniform"
+                                    Data="{TemplateBinding UnchekedGeometry}"
+                                    >
+									<Path.Fill>
+										<SolidColorBrush Color="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=CurrentFillColor}"/>
+									</Path.Fill>
+								</Path>
+								<Grid x:Name="overGrid" Background="#23FFFFFF" Visibility="Collapsed"/>
                             </Grid>
                         </Grid>
 
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsChecked" Value="True">
-                            <Setter TargetName="_path" Property="Effect">
+                            <Setter TargetName="_pathChecked" Property="Effect">
                                 <Setter.Value>
                                     <DropShadowEffect Opacity="0.5"/>
                                 </Setter.Value>
                             </Setter>
-                        </Trigger>
+							<Setter TargetName="_pathUnchecked" Property="Effect">
+								<Setter.Value>
+									<DropShadowEffect Opacity="0.5"/>
+								</Setter.Value>
+							</Setter>
+						</Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>

@@ -75,15 +75,41 @@ namespace Alt.Controls.ToggleButtons
             set { SetValue(CurrentFillColorProperty, value); }
         }
 
-        public static readonly DependencyProperty GeometryProperty =
-            DependencyProperty.Register("Geometry", typeof(Geometry), typeof(GeometryToggleButton), new PropertyMetadata(default(PathGeometry)));
+		public static readonly DependencyProperty CheckedGeometryProperty =
+            DependencyProperty.Register("CheckedGeometry", typeof(Geometry), typeof(GeometryToggleButton), new PropertyMetadata(null, (
+	            o, args) =>
+	            {
+					var instance = (GeometryToggleButton)o;
+					var newValue = (Geometry)args.NewValue;
+					if (newValue != null && instance.UnchekedGeometry == null)
+					{
+						instance.UnchekedGeometry = instance.CheckedGeometry;
+					}
+	            }));
 
-		public Geometry Geometry
+		public Geometry CheckedGeometry
         {
-			get { return (Geometry)GetValue(GeometryProperty); }
-			set { SetValue(GeometryProperty, value); }
+			get { return (Geometry)GetValue(CheckedGeometryProperty); }
+			set { SetValue(CheckedGeometryProperty, value); }
         }
 
+	    public static readonly DependencyProperty UnchekedGeometryProperty =
+		    DependencyProperty.Register("UnchekedGeometry", typeof (Geometry), typeof (GeometryToggleButton), new PropertyMetadata(null, (
+			    o, args) =>
+			    {
+					var instance = (GeometryToggleButton)o;
+					var newValue = (Geometry)args.NewValue;
+					if (newValue == null && instance.CheckedGeometry != null)
+					{
+						instance.UnchekedGeometry = instance.CheckedGeometry;
+					}
+			    }));
+
+	    public Geometry UnchekedGeometry
+	    {
+		    get { return (Geometry) GetValue(UnchekedGeometryProperty); }
+		    set { SetValue(UnchekedGeometryProperty, value); }
+	    }
         
     }
 }

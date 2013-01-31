@@ -1,8 +1,52 @@
 ﻿<Window x:Class="Dimond.WpfDemo2.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        xmlns:toggleButtons="clr-namespace:Alt.Controls.ToggleButtons;assembly=Alt.Controls"
+        Title="MainWindow" 
+		SizeToContent="WidthAndHeight"
+		Background="BlanchedAlmond">
+	
+	<StackPanel Orientation="Vertical" Margin="50" >
+		<StackPanel Orientation="Horizontal" Background="Transparent">
+
+			<toggleButtons:GeometryToggleButton
+            Width="100" 
+            Height="100" 
+            IsChecked="True"
+            CheckedGeometry="{StaticResource play}"
+			UnchekedGeometry="{StaticResource stop}"
+            CheckedColor="ForestGreen"
+            />
+
+			<toggleButtons:GeometryToggleButton 
+            Width="100" 
+            Height="100" 
+            IsChecked="True"
+            CheckedGeometry="{StaticResource github}"
+			UnchekedGeometry="{StaticResource linux}"
+            CheckedColor="Black"
+			UncheckedColor="DarkBlue"
+            />
+
+			<toggleButtons:GeometryToggleButton 
+				Width="100" 
+				Height="100" 
+				IsChecked="True"
+				CheckedGeometry="{StaticResource temperature}"
+				CheckedColor="DarkCyan"
+				/>
+
+			<toggleButtons:GeometryToggleButton 
+            Width="100" 
+            Height="100" 
+            IsChecked="True"
+            CheckedGeometry="{StaticResource soundMax}"
+			UnchekedGeometry="{StaticResource soundMin}"
+            CheckedColor="LightBlue"
+            />
+
+
+
+		</StackPanel>
+	</StackPanel>
 </Window>
