@@ -24,5 +24,14 @@ namespace Dimond.WpfDemo
         {
             InitializeComponent();
         }
+
+	    public static readonly DependencyProperty IsEnabledControlProperty =
+		    DependencyProperty.Register("IsEnabledControl", typeof (bool), typeof (MainWindow), new PropertyMetadata(default(bool)));
+
+	    public bool IsEnabledControl
+	    {
+		    get { return (bool) GetValue(IsEnabledControlProperty); }
+		    set { SetValue(IsEnabledControlProperty, value); }
+	    }
     }
 }

@@ -2,7 +2,9 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:wpfDemo="clr-namespace:Dimond.WpfDemo"
         xmlns:toggleButtons="clr-namespace:Alt.Controls.ToggleButtons;assembly=Alt.Controls"
-        Title="MainWindow" SizeToContent="WidthAndHeight">
+        xmlns:buttons="clr-namespace:Alt.Controls.Buttons;assembly=Alt.Controls"
+        Title="MainWindow" SizeToContent="WidthAndHeight"
+		x:Name="_this">
 
     <Window.Resources>
 
@@ -10,7 +12,56 @@
 
     </Window.Resources>
 
-    <StackPanel Orientation="Vertical" Margin="50">
+	<StackPanel Orientation="Vertical" Margin="50">
+		<CheckBox IsChecked="{Binding ElementName=_this, Path=IsEnabledControl}" Margin="10"/>
+		<StackPanel Orientation="Horizontal" Background="White" VerticalAlignment="Center" >
+
+			<buttons:RoundedGeometryButton
+            Width="50" 
+            Height="50" 
+			BorderThickness="3"
+			Padding="10"
+			GeometryInRound="{StaticResource configs}"
+			IsEnabled="{Binding ElementName=_this, Path=IsEnabledControl}"
+            />
+
+			<!--<toggleButtons:GeometryToggleButton 
+            Width="75" 
+            Height="75" 
+            IsChecked="True"
+            CheckedGeometry="{StaticResource github}"
+            CheckedColor="Black"
+            />
+
+			<toggleButtons:GeometryToggleButton 
+            Width="75" 
+            Height="75" 
+            IsChecked="True"
+            CheckedGeometry="{StaticResource linux}"
+            CheckedColor="#0014C5"
+            />
+
+			<toggleButtons:GeometryToggleButton 
+             Width="75" 
+            Height="75" 
+            IsChecked="True"
+            CheckedGeometry="{StaticResource temperature}"
+            CheckedColor="#FE0000"
+            />
+
+			<toggleButtons:GeometryToggleButton 
+             Width="75" 
+            Height="75" 
+            IsChecked="True"
+            CheckedGeometry="{StaticResource configs}"
+            CheckedColor="#DE6B38"
+            />-->
+
+		</StackPanel>
+
+
+	</StackPanel>
+	<!--<StackPanel Orientation="Vertical" Margin="50">
         <StackPanel Orientation="Horizontal" Background="White">
 
             <toggleButtons:GeometryToggleButton
@@ -192,5 +243,5 @@
             />
 
         </StackPanel>
-    </StackPanel>
+    </StackPanel>-->
 </Window>
